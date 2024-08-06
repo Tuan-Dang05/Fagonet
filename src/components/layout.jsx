@@ -12,6 +12,7 @@ function Layout() {
           <Nav />
           </div>
         <Outlet />
+        
         <div style={{position: 'absolute', width: '100%'}}>
         <Footer />
         </div>

@@ -10,6 +10,7 @@ import searchImg from '../../assets/images/solutions/search.png';
 import controlImg from '../../assets/images/solutions/control.png';
 import dataImg from '../../assets/images/solutions/data.png';
 import guardImg from '../../assets/images/solutions/guard.png';
+
 function SolutionsList() {
   const { t } = useTranslation();
   const [hoverSolutions, setHoverSolutions] = useState(null);
@@ -100,6 +101,7 @@ function SolutionsList() {
         {t('solutions-intro')}
       </p>
       <section className='solutions-page-list py-32'>{solution}</section>
+      
     </main>
   );
 }

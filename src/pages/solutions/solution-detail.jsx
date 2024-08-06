@@ -8,6 +8,7 @@ import Page404 from '../404/index';
 import Gallery from './gallery-section/index';
 import defaultImg from '../../assets/images/solutions/default-img.png';
 import backImg from '../../assets/images/solutions/back.png';
+import ContactForm from '../contact/contact-form';
 function SolutionDetail() {
   const fileName = 'Fortinet_Product_Matrix.pdf';
   const { link } = useParams();
@@ -57,6 +58,9 @@ function SolutionDetail() {
         })}
       </section>
       <Gallery />
+      <div style={{display: 'flex', justifyContent: 'center'}}>
+      <ContactForm/>
+      </div>
     </main>
   ) : (
     <Page404 />

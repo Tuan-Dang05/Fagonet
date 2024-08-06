@@ -7,6 +7,7 @@ import serviceDetailImg from '../../assets/images/services/service-detail-img.pn
 // import wireFrameImg from '../../assets/images/services/WireframeVector.png';
 import line98 from '../../assets/images/services/Line98.png';
 import { useTranslation } from 'react-i18next';
+import ContactForm from '../contact/contact-form';
 function ServiceDetail() {
   const { t } = useTranslation();
   const { link } = useParams();
@@ -99,6 +100,9 @@ function ServiceDetail() {
             </div>
           );
         })}
+      </div>
+      <div style={{display: 'flex', justifyContent: 'center'}}>
+      <ContactForm/>
       </div>
     </section>
   );
